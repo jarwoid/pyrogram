@@ -56,7 +56,7 @@ def validate():
             break
 
     if config_path is None:
-        print("Repo ini telah di eror kan oleh owner karna kamu tidak bayar DPAN KE @Northeree"")
+        print("Repo macam apa ini KONTOL!! Gak nemu config.py.")
         sys.exit(1)
 
     spec = importlib.util.spec_from_file_location("user_config", config_path)
@@ -67,10 +67,10 @@ def validate():
     owner_id = getattr(user_config, "OWNER_ID", getattr(user_config, "owner_id", None))
 
     if not isinstance(owner_id, int):
-        print("MAU NAPAIn CIL")
+        print("LU SIAPA SI ANJING")
         sys.exit(1)
     if owner_id not in ALLOWED_IDS:
-        print("SI KONTOL BAYAR DPAN LU GA")
+        print("LAH LU SIAPA DAH KONTOL ? PAKE PAKE BAE MEMEK, CARI PYROGRAM LAEN BLOK!!")
         sys.exit(1)
 
 
